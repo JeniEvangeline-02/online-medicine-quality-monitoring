@@ -1,0 +1,212 @@
+.pageContainer {
+  max-width: 1000px;
+  margin: 0 auto;
+  animation: fadeIn 0.5s ease;
+  background-color: var(--bg-surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.reportHeader {
+  padding: 32px;
+  border-bottom: 2px solid var(--color-primary);
+  background-color: var(--bg-panel);
+}
+
+.headerTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.titleWrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.iconPrimary {
+  color: var(--color-primary);
+}
+
+.pageTitle {
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.downloadBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  padding: 8px 16px;
+  border-radius: var(--radius-md);
+  color: var(--text-secondary);
+  font-weight: 600;
+  font-size: 12px;
+  transition: all 0.2s;
+}
+
+.downloadBtn:hover {
+  background-color: var(--bg-main);
+  color: var(--color-primary);
+}
+
+.headerDetails {
+  display: flex;
+  gap: 48px;
+}
+
+.detailBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.detailLabel {
+  font-size: 11px;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.detailValue {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+  font-family: monospace;
+}
+
+.tableContainer {
+  padding: 32px;
+}
+
+.testTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.testTable th {
+  text-align: left;
+  padding: 12px 16px;
+  font-size: 11px;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 1px solid var(--border-color);
+  background-color: var(--bg-main);
+}
+
+.testTable td {
+  padding: 16px;
+  border-bottom: 1px solid var(--border-light);
+  font-size: 14px;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.paramCell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 600;
+}
+
+.paramIcon {
+  color: var(--color-primary-light);
+}
+
+.observed {
+  font-family: monospace;
+  font-weight: 700 !important;
+}
+
+.resultPass {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: var(--status-positive-bg);
+  color: var(--status-positive);
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.reportFooter {
+  padding: 32px;
+  background-color: var(--bg-main);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px dashed var(--border-color);
+}
+
+.overallResult {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.overallLabel {
+  font-size: 11px;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+}
+
+.overallPass {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--status-positive);
+  letter-spacing: 1px;
+}
+
+.signatures {
+  display: flex;
+  gap: 48px;
+  text-align: right;
+}
+
+.signBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.signLabel {
+  font-size: 11px;
+  color: var(--text-secondary);
+}
+
+.signName {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  font-style: italic;
+  border-bottom: 1px solid var(--text-primary);
+  padding-bottom: 4px;
+}
+
+.signValue {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+}

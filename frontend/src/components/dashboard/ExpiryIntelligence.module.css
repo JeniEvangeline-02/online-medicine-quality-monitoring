@@ -1,0 +1,152 @@
+.container {
+  background-color: var(--bg-surface);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-color);
+  margin-bottom: 24px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.sectionTitle {
+  font-size: 13px;
+  color: var(--text-tertiary);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.actionBtn {
+  background-color: var(--bg-main);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  padding: 6px 12px;
+  border-radius: var(--radius-md);
+  font-size: 11px;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.actionBtn:hover {
+  background-color: var(--border-light);
+}
+
+.timelineContainer {
+  display: flex;
+  align-items: stretch;
+  height: 120px;
+}
+
+.nowLabel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 16px;
+}
+
+.nowLabel span {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.nowLine {
+  flex: 1;
+  width: 2px;
+  background-color: var(--text-primary);
+}
+
+.timeline {
+  flex: 1;
+  display: flex;
+  position: relative;
+  background-color: var(--bg-main);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.zone {
+  flex: 1;
+  border-right: 1px dashed var(--border-color);
+  position: relative;
+  padding-top: 12px;
+  padding-left: 12px;
+}
+
+.zone:last-child {
+  border-right: none;
+}
+
+.zoneCritical { background-color: var(--status-critical-bg); flex: 0.8; }
+.zoneAttention { background-color: var(--status-warning-bg); flex: 1.2; }
+.zoneStable { background-color: rgba(59, 130, 246, 0.1); flex: 1.5; }
+.zoneLong { background-color: var(--status-positive-bg); flex: 2; }
+
+.zoneLabel {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.zoneCritical .zoneLabel { color: var(--status-critical); }
+.zoneAttention .zoneLabel { color: var(--status-warning); }
+.zoneStable .zoneLabel { color: var(--status-info); }
+.zoneLong .zoneLabel { color: var(--status-positive); }
+
+.batchPoints {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 20px;
+  transform: translateY(-50%);
+}
+
+.batchPoint {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  border: 2px solid white;
+  transition: transform 0.2s;
+}
+
+.batchPoint:hover {
+  transform: translateX(-50%) scale(1.5);
+  z-index: 10;
+}
+
+.batchPoint.critical { background-color: var(--status-critical); box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.3); }
+.batchPoint.attention { background-color: var(--status-warning); box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.3); }
+.batchPoint.stable { background-color: var(--status-info); }
+.batchPoint.long { background-color: var(--status-positive); }
+
+.batchTooltip {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--text-primary);
+  color: white;
+  padding: 4px 8px;
+  font-size: 10px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+
+.batchPoint:hover .batchTooltip {
+  opacity: 1;
+}

@@ -1,0 +1,263 @@
+.pageContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.headerSection {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  background-color: var(--bg-surface);
+  padding: 32px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-color);
+  margin-bottom: 32px;
+}
+
+.productIcon {
+  width: 80px;
+  height: 80px;
+  background-color: var(--color-secondary-light);
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconPrimary {
+  color: var(--color-primary);
+}
+
+.productInfo {
+  flex: 1;
+}
+
+.productTitle {
+  font-size: 28px;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+  letter-spacing: -0.5px;
+}
+
+.metaRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.dot {
+  color: var(--border-color);
+}
+
+.batchLabel {
+  font-family: monospace;
+  background-color: var(--bg-main);
+  padding: 2px 8px;
+  border-radius: 4px;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.statusBadge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--status-positive-bg);
+  color: var(--status-positive);
+  padding: 10px 16px;
+  border-radius: var(--radius-full);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.sectionsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.infoCard {
+  background-color: var(--bg-surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 24px;
+  background-color: var(--bg-panel);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.cardIcon {
+  color: var(--color-primary);
+}
+
+.cardTitle {
+  font-size: 12px;
+  color: var(--text-secondary);
+  letter-spacing: 1.5px;
+  margin: 0;
+}
+
+.cardContent {
+  padding: 24px;
+}
+
+.profileMetric {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px 0;
+}
+
+.metricLabel {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.metricValue {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.metricValueSafe {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--status-positive);
+  background-color: var(--status-positive-bg);
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+}
+
+.divider {
+  height: 1px;
+  background-color: var(--border-light);
+  margin: 16px 0;
+}
+
+.historyList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.historyList li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.date {
+  font-size: 12px;
+  color: var(--text-tertiary);
+  width: 100px;
+}
+
+.event {
+  flex: 1;
+  font-size: 14px;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.statusPass {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--status-positive);
+  background-color: var(--status-positive-bg);
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+}
+
+.storageStats {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.statBox {
+  flex: 1;
+  background-color: var(--bg-main);
+  padding: 16px;
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.statLabel {
+  font-size: 11px;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.statValue {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.storageNote {
+  font-size: 13px;
+  color: var(--text-secondary);
+  text-align: center;
+  margin: 0;
+  padding-top: 12px;
+  border-top: 1px dashed var(--border-light);
+}
+
+.certItem {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  margin-bottom: 12px;
+}
+
+.certIcon {
+  color: var(--color-primary-light);
+}
+
+.certInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.certName {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.certId {
+  font-size: 12px;
+  color: var(--text-tertiary);
+  font-family: monospace;
+}
+
+.certStatus {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--status-positive);
+}

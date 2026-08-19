@@ -1,0 +1,180 @@
+.pageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  padding: 40px 0;
+}
+
+.verificationCard {
+  width: 100%;
+  max-width: 480px;
+  background-color: var(--bg-surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  animation: slideUp 0.5s ease-out;
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.authBanner {
+  background-color: var(--status-positive);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.productHeader {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 32px;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.productIcon {
+  width: 64px;
+  height: 64px;
+  background-color: var(--color-secondary-light);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.primaryColor {
+  color: var(--color-primary);
+}
+
+.productInfo h2 {
+  font-size: 24px;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.productInfo p {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.metadataGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 32px;
+  background-color: var(--bg-panel);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.metaItem {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.metaLabel {
+  font-size: 11px;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.metaValue {
+  font-size: 14px;
+  color: var(--text-primary);
+  font-weight: 600;
+  font-family: monospace;
+}
+
+.statusSection {
+  padding: 32px;
+}
+
+.sectionTitle {
+  font-size: 12px;
+  color: var(--text-tertiary);
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+}
+
+.statusList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.statusItem {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  background-color: var(--bg-main);
+  border-radius: var(--radius-md);
+  border-left: 4px solid var(--border-color);
+}
+
+.statusItem.approved {
+  background-color: var(--status-positive-bg);
+  border-left-color: var(--status-positive);
+}
+
+.statusItem.approved .statusName { color: var(--status-positive); }
+
+.statusIcon {
+  color: var(--text-secondary);
+}
+
+.statusItem.approved .statusIcon {
+  color: var(--status-positive);
+}
+
+.statusContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.statusName {
+  font-size: 11px;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.statusValue {
+  font-size: 14px;
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
+.footerVisual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background-color: var(--bg-main);
+}
+
+.visualLine {
+  height: 1px;
+  width: 40px;
+  background-color: var(--border-color);
+}
+
+.visualText {
+  font-size: 10px;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 12px;
+}
