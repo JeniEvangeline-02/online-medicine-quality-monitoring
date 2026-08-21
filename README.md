@@ -1,7 +1,8 @@
 # Online Testing and Monitoring of Quality of Medicines and Consumables
 
 > **An Intelligent Hospital Pharmaceutical Quality Testing, Traceability, Automated Decision & AI Risk Intelligence Platform.**
-> **Prototype url**:https://drive.google.com/drive/u/0/home
+>
+>  **Prototype url**:https://drive.google.com/drive/u/0/home
 
 ---
 
